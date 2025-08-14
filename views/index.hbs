@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario PQR</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://getbootstrap.com/docs/5.0/assets/css/docs.css">
+	<link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap">
+	<link rel="stylesheet" href="css/web.min.css">
+	<!--  -->
+	<link rel="apple-touch-icon" href="img/icon/ico-jsi.png" sizes="180x180">
+	<link rel="icon" href="img/icon/ico-jsi.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="img/icon/ico-jsi.png" sizes="16x16" type="image/png">
+</head>
+<body>
+	<div class="container">
+		<div class="card no-border-radius-card my-5">
+			{{!-- <div class="card-header pb-4" style="font-weight:550"></div> --}}
+			<div class="card-body">
+				<div class="question my-3">
+					<label>¿Preguntas frecuentes?</label> <i class="far fa-question-circle"></i> <label class="text-muted small"> <i class="fa fa-arrow-left"></i> <u>clic aquí</u></label>
+				</div>
+				<form action="#" class="g-3 needs-validation" novalidate autocomplete="off">
+					<div class="bd-callout bd-callout-info text-sm">DATOS DEL PACIENTE</div>
+					<div class="mt-4">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-3">
+								<label class="form-label">Tipo persona <span style="color: red">(*)</span></label>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-3">
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="tipo_persona" value="Natural" id="tipo_persona1" required>
+									<label class="form-check-label fw-normal" for="tipo_persona1">Natural</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="tipo_persona" value="Jurídica" id="tipo_persona2" required>
+									<label class="form-check-label fw-normal" for="tipo_persona2">Jurídica</label>
+								</div>
+								<div class="text-danger small">Por favor, seleccione un valor</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-3">
+								<label for="tipo_documento_paciente" class="form-label">Tipo de documento <span style="color: red">(*)</span></label>
+                                <select class="form-control br-0" id="tipo_documento_paciente" required>
+                                    <option selected disabled value="">- Seleccionar -</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Este campo es obligatorio. Seleccione un valor
+                                </div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-3">
+								<label for="documento_paciente" class="form-label">Número de Identificación <span style="color: red">(*)</span></label>
+								<input type="text" class="form-control br-0" id="documento_paciente" minlength="6" maxlength="12" required>
+								<div class="invalid-feedback">
+									Este campo es obligatorio. Ingrese un valor
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-md-3 col-lg-3 mb-3">
+								<label for="nombre_completo_paciente" class="form-label">Primer Nombre <span style="color: red">(*)</span></label>
+								<input type="text" class="form-control br-0" id="nombre_completo_paciente" minlength="6" maxlength="80" required>
+								<div class="invalid-feedback">
+									Este campo es obligatorio. Ingrese un valor
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-3 col-lg-3 mb-3">
+								<label for="nombre_completo_paciente" class="form-label">Segundo Nombre</label>
+								<input type="text" class="form-control br-0" id="nombre_completo_paciente" minlength="6" maxlength="80">
+								<div class="invalid-feedback">
+									Este campo es obligatorio. Ingrese un valor
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-3 col-lg-3 mb-3">
+								<label for="nombre_completo_paciente br-0" class="form-label">Primer Apellido <span style="color: red">(*)</span></label>
+								<input type="text" class="form-control br-0" id="nombre_completo_paciente" minlength="6" maxlength="80" required>
+								<div class="invalid-feedback">
+									Este campo es obligatorio. Ingrese un valor
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-3 col-lg-3 mb-3">
+								<label for="nombre_completo_paciente br-0" class="form-label">Segundo Apellido </label>
+								<input type="text" class="form-control br-0" id="nombre_completo_paciente" minlength="6" maxlength="80">
+								<div class="invalid-feedback">
+									Este campo es obligatorio. Ingrese un valor
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-3">
+								<label for="celular_paciente" class="form-label">Celular <span style="color: red">(*)</span></label>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control br-0" id="celular_paciente" placeholder="### ### ####" minlength="10" maxlength="10" required>
+									<span class="input-group-text"><i class="far fa-phone"></i></span>
+									<div class="invalid-feedback">
+										Este campo es obligatorio. Ingrese un valor
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-3">
+								<label for="telefono_paciente" class="form-label">Teléfono</label>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control br-0" id="telefono_paciente" placeholder="### ### ####" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ejemplo: 6024860777" minlength="10" maxlength="10">
+									<span class="input-group-text br-0"><i class="far fa-phone"></i></span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+								<label for="correo_electronico" class="form-label">Correo Electrónico <span style="color: red">(*)</span></label>
+								<div class="input-group mb-3">
+									<input type="email" class="form-control br-0" id="correo_electronico" placeholder="example@example.com" maxlength="120" required>
+									<span class="input-group-text"><i class="far fa-envelope"></i></span>
+									<div class="invalid-feedback">
+										Este campo es obligatorio. Ingrese un valor
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+								<label for="direccion" class="form-label">Dirección</label>
+								<input type="text" class="form-control br-0" id="direccion" maxlength="120">
+							</div>
+						</div>
+					</div>
+					<!--  -->
+					<div class="bd-callout bd-callout-warning text-sm">DATOS DEL SOLICITANTE</div>
+					<div class="mt-4">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+								<label class="form-label">¿Es usted el paciente? <span style="color: red">(*)</span></label>
+							</div>
+							<div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="es_paciente" value="Si" id="inlineRadio1" required>
+									<label class="form-check-label" for="inlineRadio1">Si</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="es_paciente" value="No" id="inlineRadio2" required>
+									<label class="form-check-label" for="inlineRadio2">No</label>
+									<div class="invalid-feedback">Esta campo es obligatorio. Seleccione un valor</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+								<label for="tipo_documento_solicitante" class="form-label">Tipo de documento <span style="color: red">(*)</span></label>
+                                <select class="form-control br-0" id="tipo_documento_solicitante" required>
+                                    <option selected disabled value="">- Seleccionar -</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Este campo es obligatorio. Seleccione un valor
+                                </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+								<label for="documento_solicitante" class="form-label">Número de Identificación <span style="color: red">(*)</span></label>
+								<input type="text" class="form-control br-0" id="documento_solicitante" minlength="6" maxlength="12" disabled readonly required>
+								<div class="invalid-feedback">
+									Este campo es obligatorio. Ingrese un valor
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+								<label for="nombre_completo_solicitante" class="form-label">Nombre Completo <span style="color: red">(*)</span></label>
+								<input type="text" class="form-control br-0" id="nombre_completo_solicitante" minlength="6" disabled readonly required>
+								<div class="invalid-feedback">
+									Este campo es obligatorio. Ingrese un valor
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+								<label for="celular_solicitante" class="form-label">Celular <span style="color: red">(*)</span></label>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control br-0" id="celular_solicitante" placeholder="### ### ####" minlength="10" maxlength="10" disabled readonly required>
+									<span class="input-group-text"><i class="far fa-phone"></i></span>
+									<div class="invalid-feedback">
+										Este campo es obligatorio. Ingrese un valor
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--  -->
+					<div class="bd-callout bd-callout-danger text-sm">DATOS DE LA SOLICITUD</div>
+					<div class="question">
+						<label>¿Cúal debería seleccionar?</label> <i class="far fa-question-circle"></i> <label class="text-muted small"> <i class="fa fa-arrow-left"></i> <u>clic aquí</u></label>
+					</div>
+					<div class="mt-4">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+								<label for="tipo_solicitud" class="form-label">Tipo de Solicitud <span style="color: red">(*)</span></label>
+								<select class="form-control br-0" id="tipo_solicitud" required>
+									<option selected disabled value="">- Seleccionar -</option>
+									<option>Petición</option>
+									<option>Queja</option>
+									<option>Reclamo</option>
+									<option>Sugerencia</option>
+									<option>Felicitación</option>
+								</select>
+								<div class="invalid-feedback">
+                                    Este campo es obligatorio. Seleccione un valor
+                                </div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+								<label for="ips" class="form-label">IPS  <span style="color: red">(*)</span></label>
+								<select class="form-control br-0" id="ips" required>
+									<option selected disabled value="">- Seleccionar -</option>
+								</select>
+								<div class="invalid-feedback">
+                                    Este campo es obligatorio. Seleccione un valor
+                                </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-3">
+								<label for="mensaje" class="form-label">Mensaje  <span style="color: red">(*)</span></label>
+								<div class="col-md-12 col-lg-12 mb-3">
+									<textarea class="form-control br-0" rows="6" id="mensaje" maxlength="5000" required></textarea>
+									<div class="row text-muted small">
+										<div class="col-6">
+											Describa de manera breve y concreta su solicitud.
+										</div>
+										<div class="col-6 text-end" id="characters">Máximo 5000 caracteres.</div>
+									</div>
+									<div class="invalid-feedback">
+										Este campo es obligatorio. Ingrese un valor
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--  -->
+					<div class="mt-4">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-3">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" name="politica" value="true" id="politica" required>
+									<label class="form-check-label" for="politica">Acepto la <a href="https://www.vallesaludips.com/politica-de-bd">Política de tratamiento de datos</a></label>
+									<div class="invalid-feedback">Esta campo es obligatorio. Seleccione la casilla de verificación</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--  -->
+					<div class="mt-4">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center mb-3">
+								<button class="btn btn-secondary br-0" type="submit" id="enviar">Enviar</button>
+								<button class="btn btn-danger br-0" type="reset" onclick="location.reload()">Cancelar</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			{{!-- <div class="card-footer pb-4"></div> --}}
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered text-center">
+				<div class="modal-content">
+					<div class="modal-header justify-content-center no_border_modal">
+						<h5 class="modal-title pt-3" id="staticBackdropLabel"><i id="icons" class="fa fa-check-circle text-success" style="font-size:50px"></i></h5>
+					</div>
+					<div class="modal-body">
+						Tu solicitud se envio exitosamente
+					</div>
+					<div class="modal-footer justify-content-center no_border_modal">
+						<button type="button" class="btn btn-secondary btn-block btn-square" data-bs-dismiss="modal">De acuerdo</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Definiciones -->
+		<div class="modal fade" id="Definition" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="InformationLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered text-center">
+				<div class="modal-content">
+					<div class="modal-header justify-content-center no_border_modal">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body text-left" id="informacion">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-12 mb-3"><label>Petición:</label> Expresión de conformidad o no con los servicios ofrecidos por la institución.</div>
+								<div class="col-lg-12 mb-3"><label>Queja:</label> Manifestación verbal o escrita de insatisfacción realizada por el usuario o su representante con respecto al servicio y/o actuación de un funcionario durante la prestación de un servicio.</div>
+								<div class="col-lg-12 mb-3"><label>Reclamo:</label> Solicitud presentada por una persona natural o jurídica con el objeto de que se revise una actuación administrativa con la cual no está conforme.</div>
+								<div class="col-lg-12 mb-3"><label>Sugerencia:</label> Propuesta presentada por un usuario como mecanismo de mejoramiento de un servicio o de la entidad.</div>
+								<div class="col-lg-12 mb-3"><label>Felicitación:</label> Manifestación por parte del usuario que expresa el agrado o satisfacción con un colaborador y/o proceso que genera el servicio.</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer justify-content-center no_border_modal">
+						<button type="button" class="btn btn-link btn-block text-secondary" data-bs-dismiss="modal">De acuerdo</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+	<script src="https://getbootstrap.com/docs/5.0/assets/js/docs.min.js"></script>
+	<script src="https://getbootstrap.com/docs/5.0/assets/js/validate-forms.js"></script>
+	<script src="js/api.js"></script>
+	<script type="module" src="js/web.min.js"></script>
+</body>
+</html>

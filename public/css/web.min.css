@@ -1,0 +1,29 @@
+body
+{
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 550;
+}
+body::-webkit-scrollbar
+{
+	display: none;
+}
+.no_border_modal
+{
+	border:0px;
+}
+.form-control{font-size: 14px;}
+.btn{font-size: 14px;}
+.no-border-radius-card{border-radius: 0px;}
+#informacion>.container>.row>div>label{color: rgba(50, 65, 88, 1);font-size: 16px;font-weight: 500;}
+#informacion>.container>.row>div{font-size: 15px;text-align: justify;font-weight:300;}
+.question, .question>label{cursor: pointer!important;}
+.question:hover, .question>label:hover{color: #0c63e4;}
+.text-left{text-align: left!important;}
+/* Device (portrait phones, 576px and up) */
+@media (max-width: 576px) {
+	.form-label, .card-header, .text-sm{font-size: 13px;}
+	.form-control, .invalid-feedback, .btn{font-size: 11px;}
+}
+
+.br-0{border-radius:0rem!important;}.br-1{border-radius:.25rem!important;}.br-2{border-radius:.375rem!important;}.br-3{border-radius:1rem!important;}.br-4{border-radius:1.25rem!important;}.br-5{border-radius:3rem!important;}
