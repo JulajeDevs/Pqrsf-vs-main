@@ -52,21 +52,21 @@ node server.js
 
 ## 🗂 Descripción de carpetas
 
-node_modules/ → Contiene todas las dependencias instaladas.
-private/ → Archivos internos y configuraciones que no deben ser públicos.
-public/ → Archivos estáticos como hojas de estilo, JavaScript del lado del cliente e imágenes.
-views/ → Plantillas para el renderizado dinámico de la interfaz.
-server.js → Archivo principal que levanta el servidor y gestiona las rutas.
+node_modules/ → Contiene todas las dependencias instaladas.<br>
+private/ → Archivos internos y configuraciones que no deben ser públicos.<br>
+public/ → Archivos estáticos como hojas de estilo, JavaScript del lado del cliente e imágenes.<br>
+views/ → Plantillas para el renderizado dinámico de la interfaz.<br>
+server.js → Archivo principal que levanta el servidor y gestiona las rutas.<br>
 
 ## 🛠 Tecnologías usadas
 
-Node.js → Entorno de ejecución JavaScript.
-Express.js → Framework para crear el servidor y manejar rutas.
-EJS / Pug / HTML → Motor de plantillas (dependiendo de la configuración real).
-Bootstrap / CSS → Estilos de la interfaz.
-JavaScript → Lógica del lado del cliente y servidor.
+Node.js → Entorno de ejecución JavaScript.<br>
+Express.js → Framework para crear el servidor y manejar rutas.<br>
+EJS / Pug / HTML → Motor de plantillas (dependiendo de la configuración real).<br>
+Bootstrap / CSS → Estilos de la interfaz.<br>
+JavaScript → Lógica del lado del cliente y servidor.<br>
 
 ## 📄 Licencia
 
-Este proyecto está bajo la licencia MIT.
+Este proyecto está bajo la licencia MIT.<br>
 Puedes usarlo, modificarlo y distribuirlo libremente, siempre citando al autor original.
